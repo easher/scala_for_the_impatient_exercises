@@ -1,8 +1,7 @@
 
 object Chapter2 {
   def main(args: Array[String]) = {
-    scalaForLoop()
-    println(computeUnicode("hello"))
+
   }
   // 1. The signum of a number is 1 if the number is positive, –1 if it is negative, and 0 if it is zero. Write a function that computes this value.
   def signumOfNumber(x: Int): Int = {
@@ -35,14 +34,14 @@ object Chapter2 {
   def computeUnicode(s: String): Int = {
     var x: Int = 0
     for(i <- 0 to s.length() - 1)
-      x *= BigInt(s(i).toInt)
+      x *= s(i).toInt
     x
   }
 
   // 7. Solve the preceding exercise without writing a loop. (Hint: Look at the StringOps Scaladoc.)
   def pruduct(s: String): Int = {
     var product : Int = 1
-    s.foreach(product *= _.toInt
+    s.foreach(product *= _.toInt)
 
     product
   }
